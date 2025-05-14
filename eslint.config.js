@@ -1,1 +1,1 @@
-// Placeholder content for eslint.config.js
+// Placeholder content for eslint.config.js 
