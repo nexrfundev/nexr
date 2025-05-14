@@ -65,6 +65,7 @@ nexr/
 ├── tailwind.config.js
 ├── tsconfig.json
 └── ...
+]]
 
 /* NEXR Roadmap */
 
