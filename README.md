@@ -39,7 +39,7 @@ NEXR is a Chrome extension that lets you launch memecoins from **tweets**, **art
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/nexr.git
+git clone [https://github.com/nexrfundev/nexr.git]
 2. Install dependencies:
 cd nexr
 npm install
