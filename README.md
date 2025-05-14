@@ -50,8 +50,6 @@ Replace `yourusername` with your actual GitHub username.
 4. Under **Source**, select the branch you want to use (e.g., `main`) and the folder (`/root`).
 5. Click **Save**.
 
-Your project page will be available at `https://yourusername.github.io/nexr/`.
-
 ---
 
 ### Step 4: Customize Your Project Page (Optional)
