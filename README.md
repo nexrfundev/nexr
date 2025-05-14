@@ -66,21 +66,79 @@ nexr/
 ├── tsconfig.json
 └── ...
 
-Roadmap
- MVP (token creation from text/images)
- Wallet + investment amount config
- Extension Store Release
- Leaderboard API integration
- Social sharing features
+/* NEXR Roadmap */
 
-Try It Soon
- The extension will be available on the Chrome Web Store shortly.
- Join the $NEXR community and be the first to mint your memes into memecoins.
-
-License
-MIT
+#include <progress.h>
+#include <features.h>
+#define VERSION 0.5.1
 
 
+class RoadmapFeature {
+ constructor(name, status, description) {
+   this.name = name;
+   this.status = status; // COMPLETED or PENDING
+   this.description = description;
+ }
+}
+
+function initRoadmap() {
+ return new Promise(async (resolve) => {
+   
+   // Core Features ✓ 
+   await implement("PIN_EXTENSION"); // Sidebar for rapid token launches
+   await implement("TOKEN_LEADERBOARD"); // Track launches in real time
+   await implement("ISOLATED_TOKENIZATION"); // Select specific page sections
+   await implement("CUSTOM_AI_PROMPTS"); // Personalized token generation
+   await implement("CUSTOM_TOKEN_IMAGES"); // Upload custom images
+   
+   // Developer & Education ✓
+   await implement("LEADERBOARD_API"); // Programmatic data access
+   await implement("EXPLAINER_VIDEO"); // Tutorial content
+   await implement("AUTO_WALLET_PROVISIONING"); // Easy onboarding
+   await implement("COIN_CREATE_CONTEST"); // Community engagement
+   await implement("METRICS_DASHBOARD"); // Usage analytics
+   
+   // In Progress □ 
+   if (await getFunds("treasury")) {
+     implement("NEW_FEE_STRUCTURE"); // 3.3% to treasury
+     console.log("Fee structure: 60% complete");
+   }
+   
+   try {
+     implement("WALLET_UPGRADES"); // Send, swap, and manage assets
+     console.log("Wallet upgrades: 20% complete");
+   } catch (e) {
+     console.log("Development in progress...");
+   }
+   
+   // Summary
+   console.log("Total completed features: 10/12");
+   
+   resolve("Roadmap initialized with v" + VERSION);
+ });
+}
+
+/*----------------------------------------------------------*\
+|                                                            |
+|  // COMPLETED:                                             |
+|  ✓ PIN_EXTENSION                                           |
+|  ✓ TOKEN_LEADERBOARD                                       |
+|  ✓ ISOLATED_TOKENIZATION                                   |
+|  ✓ CUSTOM_AI_PROMPTS                                       |
+|  ✓ LEADERBOARD_API                                         |
+|  ✓ CUSTOM_TOKEN_IMAGES                                     |
+|  ✓ AUTO_WALLET_PROVISIONING                                |
+|                                                            |
+|  // PENDING:                                               |
+|  □ NEW_FEE_STRUCTURE                                       |
+|  □ WALLET_UPGRADES                                         |
+|                                                            |
+\*----------------------------------------------------------*/
+
+// Start deployment
+initRoadmap().then(status => {
+ console.log(`NEXR roadmap deployment: ${status}`);
+});
 
 
 
