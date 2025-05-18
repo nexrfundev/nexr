@@ -1,1 +1,1 @@
-// Placeholder content for tailwind.config.js
+ // Placeholder content for tailwind.config.js
