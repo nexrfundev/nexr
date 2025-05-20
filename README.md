@@ -12,6 +12,7 @@ NEXR is a Chrome extension that lets you launch memecoins from **tweets**, **art
 ---
 
 ##  How It Works
+![image](https://github.com/user-attachments/assets/0a4a5b29-3ed0-4880-98be-45e2acdf7ea6)
 
 1. **Highlight any tweet, post, or news article**  
 2. **Click the NEXR extension**  
